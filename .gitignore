@@ -1,0 +1,22 @@
+# Python
+__pycache__/
+*.pyc
+venv/
+
+# Environment / secrets
+.env
+
+# Generated / extracted files
+extracted/
+extracted_apks/
+disassembled_code/
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Decompiled APKs / reverse engineering output
+uploads/**/
+*.apk
+*.apkm
+*.smali

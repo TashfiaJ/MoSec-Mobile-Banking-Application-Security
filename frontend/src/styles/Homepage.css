@@ -1,0 +1,130 @@
+.homepage-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: linear-gradient(135deg, #1e293b, #3b82f6);
+    color: #ffffff;
+    text-align: center;
+    padding: 2rem;
+  }
+  
+  .content {
+    max-width: 600px;
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 15px;
+    padding: 2rem;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+  }
+  
+  .gif-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 1.5rem;
+  }
+  
+  .gif-container iframe {
+    width: 100%;
+    max-width: 480px;
+    height: auto;
+    border-radius: 10px;
+  }
+  
+  .homepage-title {
+    font-size: 4rem;
+    margin-bottom: 1rem;
+    color: #243c5a; /* Base navy blue color */
+    animation: bounceGlowNavyBlue 2s infinite alternate ease-in-out, sparkleGlow 1.5s infinite alternate ease-in-out;
+  }
+  
+  /* Keyframes for bounce and vibrant navy blue glow */
+  @keyframes bounceGlowNavyBlue {
+    0% {
+      transform: translateY(0);
+      text-shadow: 
+        0 0 15px #1e3a8a, 
+        0 0 25px #2563eb, 
+        0 0 35px #fff, 
+        0 0 45px #60a5fa; /* Stronger glow around the text */
+    }
+    50% {
+      transform: translateY(-10px);
+      text-shadow: 
+        0 0 20px #1e40af, 
+        0 0 30px #3b82f6, 
+        0 0 50px #ffffff, 
+        0 0 70px #ffffff; /* More intense glowing effect */
+    }
+    100% {
+      transform: translateY(0);
+      text-shadow: 
+        0 0 15px #1e3a8a, 
+        0 0 25px #2563eb, 
+        0 0 35px #fff, 
+        0 0 45px #60a5fa; /* Return to glowing navy base */
+    }
+  }
+  
+  /* Keyframes for sparkle glow effect */
+  @keyframes sparkleGlow {
+    0% {
+      text-shadow: 
+        0 0 10px #fff, 
+        0 0 20px #fff, 
+        0 0 30px #60a5fa, 
+        0 0 40px #fff; /* Light sparkling glow */
+    }
+    25% {
+      text-shadow: 
+        0 0 15px #fff, 
+        0 0 25px #60a5fa, 
+        0 0 35px #ffffff, 
+        0 0 45px #3b82f6; /* Slightly brighter sparkling */
+    }
+    50% {
+      text-shadow: 
+        0 0 20px #ffffff, 
+        0 0 30px #1e3a8a, 
+        0 0 40px #60a5fa, 
+        0 0 50px #ffffff; /* Brighter glowing sparkles */
+    }
+    75% {
+      text-shadow: 
+        0 0 15px #fff, 
+        0 0 25px #2563eb, 
+        0 0 35px #ffffff, 
+        0 0 45px #60a5fa; /* Soft shimmering glow */
+    }
+    100% {
+      text-shadow: 
+        0 0 10px #fff, 
+        0 0 20px #fff, 
+        0 0 30px #60a5fa, 
+        0 0 40px #fff; /* End with a soft glowing effect */
+    }
+  }
+  
+  
+  .homepage-description {
+    font-size: 1.2rem;
+    margin-bottom: 2rem;
+    line-height: 1.6;
+    color: #f3f4f6;
+  }
+  
+  .get-started-button {
+    background-color: #3b82f6;
+    color: white;
+    border: none;
+    padding: 0.8rem 1.5rem;
+    font-size: 1rem;
+    border-radius: 25px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .get-started-button:hover {
+    background-color: #1e40af;
+  }
+  
