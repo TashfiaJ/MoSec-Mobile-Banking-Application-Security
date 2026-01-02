@@ -45,49 +45,49 @@ and metadata to provide a high-level overview of the app’s structure and
 functionality.
 
 2. Custom Static Analysis Tool (Based on Androguard):
-○ Build a custom static analysis tool using the Androguard API to detect SSL/TLS
+- Build a custom static analysis tool using the Androguard API to detect SSL/TLS
 misconfigurations and cryptographic API misuse
-○ Analyze the SSL/TLS certificate validation, improper cryptography, and access
+- Analyze the SSL/TLS certificate validation, improper cryptography, and access
 control issues.
-○ Provide a baseline of common SSL/TLS weaknesses, such as weak encryption,
+- Provide a baseline of common SSL/TLS weaknesses, such as weak encryption,
 unvalidated certificates, or insecure key exchanges.
 
 3. SSL/TLS Server Testing:
-○ Use Qualys SSL Server Test to assess the security of remote SSL/TLS endpoints
+- Use Qualys SSL Server Test to assess the security of remote SSL/TLS endpoints
 referenced in the APK.
-○ The test will examine the server-side configuration for protocol strength, cipher
+- The test will examine the server-side configuration for protocol strength, cipher
 choices, and certificate validity.
 4. Manual Analysis Automation:
-○ Dalvik Bytecode Disassembly: Use Baksmali to disassemble the APK’s bytecode
+- Dalvik Bytecode Disassembly: Use Baksmali to disassemble the APK’s bytecode
 and identify critical libraries such as cryptographic and networking modules.
-○ Library Detection: Automate the detection of cryptography libraries and
+- Library Detection: Automate the detection of cryptography libraries and
 dangerous third-party libraries using regex and pattern matching scripts.
-○ Lifecycle Tracing: Perform control flow analysis of the app, from the
+- Lifecycle Tracing: Perform control flow analysis of the app, from the
 onCreate() method to registration, login, and money transfer functionalities,
 focusing on sensitive data handling.
 
 5. Reverse Engineering:
-○ Use the JEB Decompiler to reverse-engineer the app and inspect its code. This
+- Use the JEB Decompiler to reverse-engineer the app and inspect its code. This
 phase will focus on verifying vulnerabilities related to cryptography, certificate
 validation, and data leakage.
-○ Trace the entire application lifecycle, starting with registration and continuing
+- Trace the entire application lifecycle, starting with registration and continuing
 through user authentication, session management, and transaction processes.
-○ Verify the presence of vulnerabilities in sensitive functionalities, including
+- Verify the presence of vulnerabilities in sensitive functionalities, including
 authentication, cryptographic procedures, and data handling.
 
 6. Sensitive Data Leakage Detection:
-○ Analyze whether sensitive data, such as financial records or personal
+- Analyze whether sensitive data, such as financial records or personal
 information, is leaked through insecure communication channels or logging.
 
 7. Result Compilation:
-○ The results of both the static and manual analysis will be displayed on a
+- The results of both the static and manual analysis will be displayed on a
 dashboard. This includes identified vulnerabilities such as SSL/TLS protocol
 errors, cryptographic weaknesses, data leakage, and authentication flaws.
-○ Each finding will be automatically verified using additional checks to reduce false
+- Each finding will be automatically verified using additional checks to reduce false
 positives and false negatives. This includes dynamic testing, control
 flow analysis, and cross-checking with external tools to ensure only real
 vulnerabilities are reported.
-○ Generate a comprehensive report for users to download, summarizing the
+- Generate a comprehensive report for users to download, summarizing the
 analysis with details on each detected vulnerability, categorized using CWE
 (Common Weakness Enumeration) classifications.
 
