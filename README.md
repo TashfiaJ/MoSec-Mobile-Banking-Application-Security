@@ -1,4 +1,4 @@
-#Introduction
+# Introduction
 Mobile money applications, also known as branchless banking, have revolutionized financial
 services in developing countries but often suffer from serious security vulnerabilities, as
 highlighted in the paper “Mo(bile) Money, Mo(bile) Problems: Analysis of Branchless Banking
