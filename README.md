@@ -39,8 +39,8 @@ outputs in the form of visual dashboards and exportable reports.
 
 # Methodology Details:
 1. APK File Input and Extraction:
-i. The user will upload APK files via the web interface.
-ii. The backend will use apktool to extract the application manifest, permissions,
+- The user will upload APK files via the web interface.
+- The backend will use apktool to extract the application manifest, permissions,
 and metadata to provide a high-level overview of the app’s structure and
 functionality.
 
